@@ -28,10 +28,6 @@ int main(int argc, char** argv)
 
     int iterationCount = std::atoi(argv[1]);
 
-    POINT cursorPos;
-    GetCursorPos(&cursorPos);
-    SetCursorPos(cursorPos.x, cursorPos.y);
-
     auto startTime = std::chrono::high_resolution_clock::now();
 
     for (int i = 0; i < iterationCount; i++) {
